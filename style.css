@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    margin: 3rem 17vw;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1, footer h1{
+  font-size: 2rem;
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal
+}
+header ul{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+header ul li{
+    color: black;
+    padding: 0 1rem;
+}
+.collections{
+    margin-top: 7rem;
+    font-family: Space Grotesk;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+}
+.slideshow-container {
+    gap: 20px;
+}
+
+.slideshow {
+    display: flex;
+}
+
+.slideshow img {
+    
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+   
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons a{
+    padding: 0rem 0.5rem;
+    color: black;
+    font-size: 1.3rem;
+}
+.about p{
+    font-family: space grotesk;
+    font-size: 1.2rem;
+}
+.images{
+    display: flex;
+    margin-top: 5rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.images img{
+    width: 50%;
+}
+.email-contact{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+.contact{
+    text-align: center;
+    
+}
+.contact h2{
+    font-size: 40px; 
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 6rem;
+    font-family: space grotesk;
+}
+.contact form{
+    width: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #000;
+    margin: 12px 0;
+}
+.field .error {
+    border: 2px solid red;
+}
+
+.field .item::placeholder{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.field .error-text{
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+.field.error .error-text{
+    display: block;
+}
+form .textarea-field .item{
+    resize: none;
+}
+form .textarea-field .error-text{
+    margin-top: -10px;
+}
+form button{
+    padding: 12px 32px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
+}
+#all-rights{
+    float: right;
+}
